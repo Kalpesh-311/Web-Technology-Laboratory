@@ -2,9 +2,17 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path: string) => {
+    if (path === "/" && location.pathname === "/") return true;
+    if (path !== "/" && location.pathname.startsWith(path)) return true;
+    return false;
+  };
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
@@ -37,19 +45,58 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <h1 className="text-2xl md:text-3xl font-bold text-primary">Mr n Mrs Pet</h1>
+            <Link to="/">
+              <h1 className="text-2xl md:text-3xl font-bold text-primary">Mr n Mrs Pet</h1>
+            </Link>
           </div>
 
           {/* Desktop navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
-            <a href="#services" className="text-gray-700 hover:text-primary transition-colors font-medium">Services</a>
-            <a href="#about" className="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
-            <a href="#gallery" className="text-gray-700 hover:text-primary transition-colors font-medium">Gallery</a>
-            <a href="#contact" className="text-gray-700 hover:text-primary transition-colors font-medium">Contact</a>
-            <Button className="bg-secondary hover:bg-secondary/90 text-white">
-              Book Now
-            </Button>
+            <Link 
+              to="/" 
+              className={`transition-colors font-medium ${
+                isActive("/") ? "text-primary" : "text-gray-700 hover:text-primary"
+              }`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/services" 
+              className={`transition-colors font-medium ${
+                isActive("/services") ? "text-primary" : "text-gray-700 hover:text-primary"
+              }`}
+            >
+              Services
+            </Link>
+            <Link 
+              to="/about" 
+              className={`transition-colors font-medium ${
+                isActive("/about") ? "text-primary" : "text-gray-700 hover:text-primary"
+              }`}
+            >
+              About
+            </Link>
+            <Link 
+              to="/gallery" 
+              className={`transition-colors font-medium ${
+                isActive("/gallery") ? "text-primary" : "text-gray-700 hover:text-primary"
+              }`}
+            >
+              Gallery
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`transition-colors font-medium ${
+                isActive("/contact") ? "text-primary" : "text-gray-700 hover:text-primary"
+              }`}
+            >
+              Contact
+            </Link>
+            <Link to="/book-now">
+              <Button className="bg-secondary hover:bg-secondary/90 text-white">
+                Book Now
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -65,14 +112,56 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="lg:hidden mt-4 pb-4 border-t pt-4">
             <div className="flex flex-col space-y-4">
-              <a href="#home" className="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
-              <a href="#services" className="text-gray-700 hover:text-primary transition-colors font-medium">Services</a>
-              <a href="#about" className="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
-              <a href="#gallery" className="text-gray-700 hover:text-primary transition-colors font-medium">Gallery</a>
-              <a href="#contact" className="text-gray-700 hover:text-primary transition-colors font-medium">Contact</a>
-              <Button className="bg-secondary hover:bg-secondary/90 text-white w-fit">
-                Book Now
-              </Button>
+              <Link 
+                to="/" 
+                className={`transition-colors font-medium ${
+                  isActive("/") ? "text-primary" : "text-gray-700 hover:text-primary"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link 
+                to="/services" 
+                className={`transition-colors font-medium ${
+                  isActive("/services") ? "text-primary" : "text-gray-700 hover:text-primary"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
+              </Link>
+              <Link 
+                to="/about" 
+                className={`transition-colors font-medium ${
+                  isActive("/about") ? "text-primary" : "text-gray-700 hover:text-primary"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link 
+                to="/gallery" 
+                className={`transition-colors font-medium ${
+                  isActive("/gallery") ? "text-primary" : "text-gray-700 hover:text-primary"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Gallery
+              </Link>
+              <Link 
+                to="/contact" 
+                className={`transition-colors font-medium ${
+                  isActive("/contact") ? "text-primary" : "text-gray-700 hover:text-primary"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+              <Link to="/book-now" onClick={() => setIsMenuOpen(false)}>
+                <Button className="bg-secondary hover:bg-secondary/90 text-white w-fit">
+                  Book Now
+                </Button>
+              </Link>
             </div>
           </nav>
         )}

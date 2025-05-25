@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const GallerySection = () => {
   const galleryImages = [
@@ -59,9 +60,11 @@ const GallerySection = () => {
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="text-center text-white">
                   <h3 className="text-xl font-bold mb-2">{image.title}</h3>
-                  <Button variant="outline" className="border-white text-white hover:bg-white hover:text-gray-800">
-                    View Details
-                  </Button>
+                  <Link to="/services">
+                    <Button variant="outline" className="border-white text-white hover:bg-white hover:text-gray-800">
+                      View Details
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -69,9 +72,11 @@ const GallerySection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3">
-            View Full Gallery
-          </Button>
+          <Link to="/gallery">
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3">
+              View Full Gallery
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

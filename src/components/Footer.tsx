@@ -1,5 +1,6 @@
 
 import { Heart, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -30,11 +31,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-bold">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-300 hover:text-primary transition-colors">Home</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-primary transition-colors">Services</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-primary transition-colors">About</a></li>
-              <li><a href="#gallery" className="text-gray-300 hover:text-primary transition-colors">Gallery</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
+              <li><Link to="/" className="text-gray-300 hover:text-primary transition-colors">Home</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-primary transition-colors">Services</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-primary transition-colors">About</Link></li>
+              <li><Link to="/gallery" className="text-gray-300 hover:text-primary transition-colors">Gallery</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -42,11 +43,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-bold">Our Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Pet Grooming</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Pet Boarding</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Pet Training</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Veterinary Care</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-secondary transition-colors">Pet Daycare</a></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-secondary transition-colors">Pet Grooming</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-secondary transition-colors">Pet Boarding</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-secondary transition-colors">Pet Training</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-secondary transition-colors">Veterinary Care</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-secondary transition-colors">Pet Daycare</Link></li>
             </ul>
           </div>
 
