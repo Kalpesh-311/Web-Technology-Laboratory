@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Heart, Star, Users } from "lucide-react";
 
@@ -63,7 +62,7 @@ const HeroSection = () => {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3"
-                alt="Happy pets at Mr n Mrs Pet"
+                alt="Happy pets at Dhule Pet Hostel"
                 className="rounded-3xl shadow-2xl w-full object-cover h-[500px]"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-lg">

@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -134,7 +133,7 @@ const BookNow = () => {
                         <Mail className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <div className="font-medium text-gray-800">info@mrnmrspet.com</div>
+                        <div className="font-medium text-gray-800">info@dhulepethostel.com</div>
                         <div className="text-gray-600">Email Us</div>
                       </div>
                     </div>

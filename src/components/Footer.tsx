@@ -1,4 +1,3 @@
-
 import { Heart, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -9,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-primary">Mr n Mrs Pet</h3>
+            <h3 className="text-2xl font-bold text-primary">Dhule Pet Hostel</h3>
             <p className="text-gray-300">
               Your trusted partner in pet care for over 10 years. We treat your pets 
               like family because they are family.
@@ -65,7 +64,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-gray-300">info@mrnmrspet.com</span>
+                <span className="text-gray-300">info@dhulepethostel.com</span>
               </div>
             </div>
             <div className="bg-gray-700 p-4 rounded-lg">
@@ -78,7 +77,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-300 text-sm">
-              © 2024 Mr n Mrs Pet. All rights reserved.
+              © 2024 Dhule Pet Hostel. All rights reserved.
             </div>
             <div className="flex items-center gap-2 text-gray-300 text-sm">
               Made with <Heart className="w-4 h-4 text-red-500" /> for pets everywhere

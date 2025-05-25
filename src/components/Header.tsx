@@ -27,7 +27,7 @@ const Header = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>info@mrnmrspet.com</span>
+                <span>info@dhulepethostel.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -46,7 +46,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/">
-              <h1 className="text-2xl md:text-3xl font-bold text-primary">Mr n Mrs Pet</h1>
+              <h1 className="text-2xl md:text-3xl font-bold text-primary">Dhule Pet Hostel</h1>
             </Link>
           </div>
 
