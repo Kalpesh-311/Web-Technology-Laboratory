@@ -33,10 +33,10 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
-                About Mr n Mrs Pet
+                About Dhule Pet Hostel
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                For over 10 years, Mr n Mrs Pet has been the trusted choice for pet care in our community. 
+                For over 10 years, Dhule Pet Hostel has been the trusted choice for pet care in our community. 
                 We started with a simple mission: to provide the highest quality care for pets while 
                 giving their owners complete peace of mind.
               </p>
@@ -55,7 +55,7 @@ const AboutSection = () => {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3"
-                alt="Our team at Mr n Mrs Pet"
+                alt="Our team at Dhule Pet Hostel"
                 className="rounded-3xl shadow-2xl w-full object-cover h-[400px]"
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-lg">

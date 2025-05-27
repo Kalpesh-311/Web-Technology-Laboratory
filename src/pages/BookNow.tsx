@@ -49,7 +49,7 @@ const BookNow = () => {
                       <input 
                         type="tel" 
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                        placeholder="(555) 123-4567"
+                        placeholder="(+91) 88065-98000"
                       />
                     </div>
                     <div>
@@ -124,7 +124,7 @@ const BookNow = () => {
                         <Phone className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <div className="font-medium text-gray-800">(555) 123-4567</div>
+                        <div className="font-medium text-gray-800">(+91) 88065-98000</div>
                         <div className="text-gray-600">Main Line</div>
                       </div>
                     </div>
@@ -133,7 +133,7 @@ const BookNow = () => {
                         <Mail className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <div className="font-medium text-gray-800">info@dhulepethostel.com</div>
+                        <div className="font-medium text-gray-800">Kalpeshpatil3@acm.org</div>
                         <div className="text-gray-600">Email Us</div>
                       </div>
                     </div>
@@ -142,7 +142,7 @@ const BookNow = () => {
                         <MapPin className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <div className="font-medium text-gray-800">123 Pet Street</div>
+                        <div className="font-medium text-gray-800">SVKM-IOT</div>
                         <div className="text-gray-600">City, State 12345</div>
                       </div>
                     </div>
@@ -170,7 +170,7 @@ const BookNow = () => {
                   </div>
                   <div className="mt-6 p-4 bg-white/20 rounded-lg">
                     <div className="font-bold">Emergency Services</div>
-                    <div className="text-sm">24/7 Emergency Line: (555) 123-4568</div>
+                    <div className="text-sm">24/7 Emergency Line: (+91) 88052-98000</div>
                   </div>
                 </div>
 

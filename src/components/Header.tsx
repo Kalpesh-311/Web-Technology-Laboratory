@@ -23,15 +23,15 @@ const Header = () => {
             <div className="flex flex-wrap items-center gap-4">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>(555) 123-4567</span>
+                <span>(+91) 88065-98000</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>info@dhulepethostel.com</span>
+                <span>Kalpeshpatil3@acm.org</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>123 Pet Street, City, State 12345</span>
+                <span>SVKM-IOT, Dhule, Maharashtra 424001</span>
               </div>
             </div>
             <div className="hidden md:block">

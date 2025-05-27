@@ -51,7 +51,7 @@ const ContactSection = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Phone
                   </label>
-                  <Input type="tel" placeholder="(555) 123-4567" className="border-gray-200" />
+                  <Input type="tel" placeholder="(+91) 88065-98000" className="border-gray-200" />
                 </div>
                 
                 <div>
@@ -106,9 +106,9 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Address</h4>
                       <p className="text-gray-600">
-                        123 Pet Street<br />
-                        Pet City, State 12345<br />
-                        United States
+                        SVKM-IOT<br />
+                        Dhule<br />
+                        Maharshtra-424001
                       </p>
                     </div>
                   </div>
@@ -120,8 +120,8 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Phone</h4>
                       <p className="text-gray-600">
-                        Main: (555) 123-4567<br />
-                        Emergency: (555) 123-4568
+                        Main: (+91) 88065-98000<br />
+                        Emergency: (+91) 88052-98000
                       </p>
                     </div>
                   </div>
@@ -133,8 +133,8 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Email</h4>
                       <p className="text-gray-600">
-                        General: info@mrnmrspet.com<br />
-                        Emergency: emergency@mrnmrspet.com
+                        General: Kalpeshpatil3@acm.org<br />
+                        Emergency: Kalpeshspatil311@gmail.com
                       </p>
                     </div>
                   </div>
@@ -168,7 +168,7 @@ const ContactSection = () => {
                     Online Booking
                   </Button>
                   <Button size="lg" className="w-full bg-white text-primary hover:bg-gray-100">
-                    Call (555) 123-4567
+                    Call (+91) 88065-98000
                   </Button>
                 </div>
               </CardContent>

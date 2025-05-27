@@ -56,20 +56,20 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span className="text-gray-300">123 Pet Street, City, State 12345</span>
+                <span className="text-gray-300">SVKM-IOT, Dhule, Maharashtra 424001</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary" />
-                <span className="text-gray-300">(555) 123-4567</span>
+                <span className="text-gray-300">(+91) 88065-98000</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-gray-300">info@dhulepethostel.com</span>
+                <span className="text-gray-300">Kalpeshpatil3@acm.org</span>
               </div>
             </div>
             <div className="bg-gray-700 p-4 rounded-lg">
               <div className="text-sm font-bold text-secondary mb-1">Emergency 24/7</div>
-              <div className="text-sm text-gray-300">(555) 123-4568</div>
+              <div className="text-sm text-gray-300">(+91) 88052-98000</div>
             </div>
           </div>
         </div>
@@ -77,14 +77,14 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-300 text-sm">
-              © 2024 Dhule Pet Hostel. All rights reserved.
+              © 2025 Dhule Pet Hostel. All rights reservedby SVKM-IOT,
             </div>
             <div className="flex items-center gap-2 text-gray-300 text-sm">
-              Made with <Heart className="w-4 h-4 text-red-500" /> for pets everywhere
+              Special Thanks<Heart className="w-4 h-4 text-red-500" /> To Mam Rinku Sharma
             </div>
-            <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-300 hover:text-primary transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-300 hover:text-primary transition-colors">Terms of Service</a>
+
+            <div className="flex items-center gap-2 text-gray-300 text-sm">
+              Made with <Heart className="w-4 h-4 text-red-500"  /> from Devendra + Vivek + Yash + Kalpesh 
             </div>
           </div>
         </div>

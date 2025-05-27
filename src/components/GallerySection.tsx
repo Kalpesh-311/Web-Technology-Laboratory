@@ -44,7 +44,7 @@ const GallerySection = () => {
             See Our Happy Pets
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Take a look at some of our furry friends enjoying their time at Mr n Mrs Pet. 
+            Take a look at some of our furry friends enjoying their time at Dhule Pet Hostel. 
             Every day brings new smiles, wagging tails, and happy moments.
           </p>
         </div>
